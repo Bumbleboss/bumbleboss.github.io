@@ -190,7 +190,7 @@ nav ul li {
     transition: height 100ms ease-in;
     padding:10px;
     padding-bottom: 20px;
-    overflow: auto;
+    border: #a88e79 10px;
 }
 
 .prj-hld:hover {
@@ -208,8 +208,5 @@ nav ul li {
 .prj-hld-img {
     width: 100px;
     float: right;
-}
-
-.prj-hld #content {
-    padding: 15px 0;
+    overflow: auto;
 }
