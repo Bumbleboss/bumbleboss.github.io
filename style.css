@@ -216,4 +216,5 @@ nav ul li {
     margin: 20px auto;
     height: 150px;
     width: 25% !important;
+    overflow: auto;
 }
