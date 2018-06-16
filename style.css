@@ -214,4 +214,6 @@ nav ul li {
 
 .prj-hld-img {
     margin: 20px auto;
+    height: 150px;
+    width: 25% !important;
 }
