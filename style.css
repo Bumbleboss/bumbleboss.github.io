@@ -206,6 +206,10 @@ nav ul li {
 }
 
 .prj-hld-img {
-    width: 900px;
+    width: 100px;
     float: right;
+}
+
+.prj-hld #content {
+    padding: 15px 0;
 }
