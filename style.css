@@ -1,0 +1,211 @@
+/*----------------------------FONTS----------------------------*/
+
+@font-face {
+    font-family: Brother-1816-Medium;
+    src: url('assets/TipoType - Brother-1816-Medium.otf');
+}
+
+@font-face {
+    font-family: Brother-1816-Regular;
+    src: url('assets/TipoType - Brother-1816-Regular.otf');
+}
+
+@font-face {
+    font-family: Brother-1816-Book;
+    src: url('assets/TipoType - Brother-1816-Book.otf');
+}
+
+/*----------------------------BODY----------------------------*/
+
+body{
+    margin: 0;
+    font-family: Brother-1816-Medium;
+    background-color: #212121;
+    color: #E5E5E5
+}
+
+/*----------------------------NAVIGATION BAR----------------------------*/
+
+nav {
+    height: 90px;
+    line-height: 80px;
+    word-spacing: 125px;
+    font-size: 29px;
+    background-color: #1c1c1c;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.headerLogo {
+    font-size: 36px;
+    font-family: Brother-1816-Book;
+}
+
+.headerLogo span {
+    font-family: Brother-1816-Medium;
+}
+
+.btn-nav {
+    color: #D6D6D6;
+    background-image: linear-gradient(#a88e79, #a88e79);
+    background-size: 0 2px,100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom,center calc(100% - 1px);
+    background-color: transparent;
+    transition: background 100ms ease-out;
+    cursor: pointer;
+    font-size: 29px;
+    padding: 5px 15px 5px 15px;
+}
+
+.btn-nav:hover {
+    background-image: linear-gradient(#a88e79, #a88e79);
+    background-size: 100% 2px,100% 1px;
+    transition: background 100ms ease-in;
+}
+
+.btn-nav:active{
+    background-size: 100%; 
+    color: #212121;
+}
+
+.btn-nav:focus {
+    outline:0;
+}
+
+.btn-link{
+    text-decoration: none;
+}
+
+.btn-link:visited {
+    color: #D6D6D6;
+    text-decoration: none;
+}
+
+/*----------------------------BODY-ELEMENTS----------------------------*/
+
+.lg-ani {
+    width: 620px;
+    height: 510px;
+    padding-right: 100px;
+    padding-top: 8%;
+    padding-left: 158px;
+    float: left;
+    pointer-events: none;
+}
+
+.bg-txt {
+    float:right;
+    font-size: 83px;
+    line-height: 70px;
+    margin: 0;
+    padding-top: 18%;
+    padding-right: 12%
+}
+
+.bg-txt span {
+    font-size: 54px;
+    padding-left: 80px;
+}
+
+.dscrd {
+    position: absolute;
+    transition: top 50ms ease-out;
+    width: 155px;
+    height: 55px;
+    top: 725px;
+    left: 4%;
+}
+
+.dscrd:hover {
+    transition: top 50ms ease-in;
+    top: 727px;
+}
+
+
+/*----------------------------LINKS----------------------------*/
+
+.lnks{
+    background-image: linear-gradient(#a88e79, #a88e79);
+    background-size: 0 4px,100% 1px;
+    background-repeat: no-repeat;
+    background-position: center bottom,center calc(100% - 1px);
+    background-color: transparent;
+    transition: background 100ms ease-in;
+    padding-bottom: 10px;
+    text-decoration: none;
+    color: #897364;
+}
+
+
+.lnks:hover {
+    background-size: 100% 4px,100% 1px;
+    transition: background 100ms ease-out;
+    padding-bottom: 10px;
+    color: #a88e79;
+}
+
+/*----------------------------BACKGROUND----------------------------*/
+
+.parallax > use {
+    animation: move-forever 120s linear infinite;
+  }
+  @keyframes move-forever {
+    0% {
+      transform: translate(30px, 35%);
+    }
+    100% {
+      transform: translate(120px, 35%);
+    }
+}
+
+/*----------------------------SCROLLBAR----------------------------*/
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #a88e79; 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #897364; 
+}
+
+/*----------------------------PROJECT PLACEHOLDERS----------------------------*/
+
+.prj-hld {
+    height: 200px;
+    transition: height 100ms ease-in;
+    padding:10px;
+    padding-bottom: 20px;
+    overflow: auto;
+}
+
+.prj-hld:hover {
+    height: 214px;  
+    transition: height 100ms ease-out; 
+}
+
+.prj-hld-title {
+    margin:0px;
+    height: 135px;
+    font-size: 95px;
+    padding-left: 90px;
+}
+
+.prj-hld-img {
+    width: 900px;
+    float: right;
+}
