@@ -41,6 +41,7 @@ nav ul li {
 
 .headerLogo {
     font-size: 36px;
+    color: #D6D6D6;
     font-family: Brother-1816-Book;
 }
 
@@ -74,15 +75,6 @@ nav ul li {
 
 .btn-nav:focus {
     outline:0;
-}
-
-.btn-link{
-    text-decoration: none;
-}
-
-.btn-link:visited {
-    color: #D6D6D6;
-    text-decoration: none;
 }
 
 /*----------------------------BODY-ELEMENTS----------------------------*/
