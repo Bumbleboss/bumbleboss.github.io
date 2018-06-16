@@ -214,7 +214,7 @@ nav ul li {
 .prj-hld-img {
     display: block;
     margin: auto;
-    height: -webkit-match-parent;
+    height: -webkit-fill-available;
     width: 30%;
     overflow: auto;
 }
