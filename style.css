@@ -189,7 +189,15 @@ nav ul li {
     height: 200px;
     transition: height 100ms ease-in;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.prj-hld .image_wrap {
+    width: 50%;
+    height: 180px;
+    float: right;
+    overflow: auto;
+    margin-right: 20px;
 }
 
 .prj-hld:hover {
@@ -205,8 +213,5 @@ nav ul li {
 }
 
 .prj-hld-img {
-    height: 135px;
-    float: right;
-    overflow: auto;
-    margin-right: 20px;
+    margin: 20px auto;
 }
