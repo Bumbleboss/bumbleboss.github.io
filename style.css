@@ -32,7 +32,6 @@ nav {
     word-spacing: 125px;
     font-size: 29px;
     background-color: #1c1c1c;
-    display: inline;
 }
 
 nav ul li {
@@ -178,6 +177,19 @@ nav ul li {
 
 /*----------------------------PROJECT PLACEHOLDERS----------------------------*/
 
+.arrow {
+    height: 36px;
+    position:absolute;
+    top: 540px;
+    left: 1400px;
+    transition: top 100ms ease-in;
+}
+
+.arrow:hover {
+    transition: top 100ms ease-out;
+    top: 545px;
+}
+
 .prj-hld {
     height: 200px;
     transition: height 100ms ease-in;
@@ -199,8 +211,15 @@ nav ul li {
 
 .prj-hld-title {
     height: -webkit-match-parent;
-    font-size: 95px;
+    font-size: 75px;
     padding-left: 90px;
+    margin-top: 35px; 
+    transition: padding-left 100ms ease-in; 
+}
+
+.prj-hld-title:hover {
+    padding-left: 95px;
+    transition: padding-left 100ms ease-out; 
 }
 
 .prj-hld-img {
