@@ -21,7 +21,8 @@ body{
     margin: 0;
     font-family: Brother-1816-Medium;
     background-color: #212121;
-    color: #E5E5E5
+    color: #E5E5E5;
+    scroll-behavior: smooth;
 }
 
 /*----------------------------NAVIGATION BAR----------------------------*/
