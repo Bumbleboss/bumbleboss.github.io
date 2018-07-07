@@ -178,13 +178,51 @@ nav ul li {
 
 /*---------------------------------------------------------PROJECTS-PAGE--------------------------------------------------*/
 
+/*----------------------------FRONT-SECTION----------------------------*/
+
+.pr-ico {
+    width: 520px;
+    height: 510px;
+    padding-right: 100px;
+    padding-top: 8%;
+    padding-left: 300px;
+    float: left;
+    pointer-events: none;
+}
+
+.pr-txt {
+    float:right;
+    font-size: 80px;
+    line-height: 70px;
+    margin: 0;
+    padding-top: 18%;
+    padding-right: 15%
+}
+
+#BRUSH {
+    animation: slide 1s ease;
+}
+
+#PEN{
+    animation: slide 1.2s ease;
+}
+
+@keyframes slide {
+    0% {
+        transform: translate3d(0, 30%, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
 /*----------------------------SCROLL-DOWN----------------------------*/
 
 .arrow {
-    height: 36px;
+    height: 33px;
     position:absolute;
     top: 540px;
-    left: 1400px;
+    left: 1350px;
     transition: top 100ms ease-in;
 }
 
@@ -196,7 +234,7 @@ nav ul li {
 /*----------------------------PLACE-HOLDERS----------------------------*/
 
 .prj-hld {
-    height: 200px;
+    height: 218px;
     transition: height 100ms ease-in;
     padding: 10px;
     padding-bottom: 10px;
