@@ -77,6 +77,8 @@ nav ul li {
     outline:0;
 }
 
+/*---------------------------------------------------------HOME-PAGE--------------------------------------------------*/
+
 /*----------------------------BODY-ELEMENTS----------------------------*/
 
 .lg-ani {
@@ -271,4 +273,64 @@ nav ul li {
     height: -webkit-fill-available;
     width: 30%;
     overflow: auto;
+}
+
+/*---------------------------------------------------------ABOUT-PAGE--------------------------------------------------*/
+
+/*----------------------------BOXES----------------------------*/
+
+.l-rect {
+    margin-top: 100px;
+    margin-left: 144px;
+    background-color: #1c1c1c;
+    float: left;
+    width: 990px;
+    height: 680px;
+}
+
+.r-rect {
+    margin-top: 100px;
+    margin-right: 110px;
+    background-color: #1c1c1c;
+    float:right;
+    width: 603px;
+    height: 207px;
+
+}
+
+/*----------------------------BODY ELEMENTS----------------------------*/
+
+.abt-title {
+    padding-left: 63px;
+    padding-bottom: 30px;
+    font-size: 75px;
+    color: #e5e5e5;
+}
+
+.abt-txt {
+    padding-left: 65px;
+    padding-bottom: 110px;
+    font-size: 48px;
+    line-height: 60px;
+    color: #e5e5e5;
+}
+
+.abt-img {
+    pointer-events: none;
+    padding-top: 27px;
+    padding-right: 27px;
+    float:right;
+    width: 225px;
+    height: 225px;
+}
+
+.abt-q {
+    padding-left: 63px;
+    font-size: 36px;
+    color: #a88e79;
+    line-height: 40px;
+}
+
+.abt-q span {
+    font-size: 24px;
 }
