@@ -279,7 +279,8 @@ nav ul li {
 
 /*----------------------------BOXES----------------------------*/
 
-.l-rect {
+.l-box {
+    border-radius: 0 0 300px 0;
     margin-top: 100px;
     margin-left: 144px;
     background-color: #1c1c1c;
@@ -288,12 +289,12 @@ nav ul li {
     height: 680px;
 }
 
-.r-rect {
+.r-box {
     margin-top: 100px;
     margin-right: 110px;
     background-color: #1c1c1c;
     float:right;
-    width: 603px;
+    width: 550px;
     height: 207px;
 
 }
@@ -309,7 +310,7 @@ nav ul li {
 
 .abt-txt {
     padding-left: 65px;
-    padding-bottom: 110px;
+    padding-bottom: 80px;
     font-size: 48px;
     line-height: 60px;
     color: #e5e5e5;
@@ -333,4 +334,73 @@ nav ul li {
 
 .abt-q span {
     font-size: 24px;
+}
+
+.abt-q thin {
+    font-family: Brother-1816-Book;
+}
+
+/*----------------------------SOCIAL MEDIA----------------------------*/
+
+.scl-hold {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.scl-txt {
+    font-size: 30px;
+    margin-top: 20px;
+    width: 310px;
+}
+
+.a, a:visited, a:link {
+    color: #a88e79;
+    text-decoration: none;
+}
+
+.c-icon {
+    width:  40px;
+    height: 40px;
+    fill: currentColor;
+    transition: .2s;
+}
+
+.c-link--twitter:hover {color: #55acee}
+.c-link--twitter:hover::after {background: #55acee}
+.c-link--github:hover {color: #ffffff}
+.c-link--github:hover::after {background: #212121 }
+.c-link--paypal:hover {color: #27346a}
+.c-link--paypal:hover::after {background: #2790c3 }
+.c-link--yt:hover {color: #FF0000}
+.c-link--yt:hover::after {background: #FF0000 }
+.c-link {
+    position: relative;
+    color: #bbb;
+}
+
+.c-link:not(:last-of-type) {
+    margin-right: 30px;
+}
+
+.c-tooltip::before, .c-tooltip::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    opacity: 0;
+    transition: .2s;
+}
+
+.c-tooltip::after {
+    content: attr(aria-label);
+    bottom: calc(160% + 12px);
+    padding: .61em .93em;
+    font-size: .875rem;
+    color: white;
+    border-radius: 3px;
+}
+
+.c-tooltip:hover::before, .c-tooltip:hover::after {
+    opacity: 1;
+    transform: translate(-50%);
 }
