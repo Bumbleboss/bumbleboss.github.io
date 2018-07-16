@@ -309,9 +309,10 @@ nav ul li {
 }
 
 .abt-txt {
+    font-family: Brother-1816-Regular;
     padding-left: 65px;
-    padding-bottom: 80px;
-    font-size: 48px;
+    padding-bottom: 130px;
+    font-size: 45px;
     line-height: 60px;
     color: #e5e5e5;
 }
