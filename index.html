@@ -1,67 +1,32 @@
+<!DOCTYPE html>
 <html>
    <head>
       <title>Bumbleboss</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="style.css">
-      <link rel="stylesheet" href="assets/particle.css">
    </head>
    <body>
-      <nav style="background-color: #212121;">
-         <ul style="padding-left:60px; margin:0px;">
-            <a href="./index.html"><li class="headerLogo">BUMBLE<span>BOSS</span></li></a>
-            <a href="./pages/projects.html"><li class="btn-nav">PROJECTS</li></a>
-            <a href="./pages/about.html"><li class="btn-nav">ABOUT</li></a>
-         </ul>
-      </nav>
-      <div id="body-elm" style="position:relative;">
-         <div class="bg-txt">HELLO THERE.<br><span>wanna see <a href="./pages/projects.html" class="lnks">my projects?</a></span></div>
-         <div id="bm" class="lg-ani" style="position:absolute;">
-            <script src="scripts/lottie.js"></script><script src="scripts/index.js"></script>
-         </div>
-         <div id="particles" style="z-index: -1;position: absolute;">
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-            <div class="particle"></div>
-         </div>
-         
-         <a class= "dscrd" href="https://discord.gg/7PCdKYN" target="_blank">
-            <img src="assets/dscrd-ad.svg"></img>
-         </a>
-
-         <svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink" perspectiveAspectRatio="none" viewBox="0 24 248 67.7" style="position:absolute;top: 335px;z-index: -1;">
-            <defs>
-               <path id="gentle-wave"d="M-160 68.66s11.34.51 16-4.33 25.39-21.12 40.67-16.79 17.51 14.5 22.68 16 12.82-5.85 22.19-20.87 21.94-12 39.93 0 46.1-23.15 67.29-22.39 29.58 1.78 49.06 28.25 36-11.45 51-9.67 15.42 19.72 24.47 25.78c3.81 2.54 18.67 4 18.67 4V88H-160V68.66"/>
-            </defs>
-            <g class="parallax">
-               <use xlink:href="#gentle-wave" x="50" y="6" fill="#1c1c1c"/>
-            </g>
-         </svg>
-      </div>
-   </body>
+        <div class="navi">
+            <div class="headlogo">BUMBLE<span>BOSS</span></div>
+            <input id="burger" type="checkbox"/>
+            <label for="burger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <ul>
+                    <a href="#"><li class="btn-nav">PROJECTS</li></a>
+                    <a href="#"><li class="btn-nav">ABOUT</li></a>
+                </ul>  
+            </nav>
+        </div>
+        <div class="front_obj">
+            <img class="lg-ani" src="./assets/animated_logo.svg">
+            <div class="bg-txt">HELLO THERE.<br><span>wanna see <a href="#" class="lnks">my projects?</a></span></div>
+            <a href="#">
+                <img class= "dscrd" src="assets/dscrd-ad.svg"></img>
+            </a>
+        </div>
+    </body>
 </html>
