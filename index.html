@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Bumbleboss</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="style.css">
-   </head>
-   <body>
-        <div class="navi">
-            <div class="headlogo">BUMBLE<span>BOSS</span></div>
-            <input id="burger" type="checkbox"/>
-            <label for="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </label>
-            <nav>
-                <ul>
-                    <a href="#"><li class="btn-nav">PROJECTS</li></a>
-                    <a href="#"><li class="btn-nav">ABOUT</li></a>
-                </ul>  
-            </nav>
-        </div>
-        <div class="front_obj">
-            <img class="lg-ani" src="./assets/animated_logo.svg">
-            <div class="bg-txt">HELLO THERE.<br><span>wanna see <a href="#" class="lnks">my projects?</a></span></div>
-            <a href="#">
-                <img class= "dscrd" src="assets/dscrd-ad.svg"></img>
-            </a>
-        </div>
-    </body>
+<head>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- SECTION A -->
+    <div class="section" id="sec_a">
+
+      <div class="box" id="box_a3" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+
+      <div class="box" id="box_a1"><span>BUMBLE</span>BOSS</div>
+
+      <div class="box" id="box_a2">
+        <ul>
+          <li>PROJECTS</li>
+          <li>ABOUT</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- SECTION B -->
+    <div class="section" id="sec_b">
+      
+      <div class="box" id="box_b1">
+        <img class="animated_logo" src="./assets/animated_logo.svg">
+      </div>
+
+      <div class="box" id="box_b2">HELLO THERE.<br><span>wanna see <a href="#">my projects?</a></span></div>
+    </div>
+
+    <!-- SECTION C -->
+    <div class="section" id="sec_c">
+      <div class="box" id="box_c">
+        <img class="discord_ad" src="./assets/dscrd-ad.svg">
+      </div>
+    </div>
+
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+    </script>
+  </div>
+</body>
 </html>
