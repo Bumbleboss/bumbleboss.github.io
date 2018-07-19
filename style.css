@@ -28,7 +28,9 @@ body {
   grid-auto-rows: auto 1fr auto;
   position: absolute;
   height: 100vh;
-  margin: -8px 0.5em 0;
+  width: 100vw;
+  margin-top: -8px;
+  margin-left: -8px;
 }
 
 .section {
