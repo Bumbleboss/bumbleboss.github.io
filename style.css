@@ -127,7 +127,7 @@ body {
 
 .change ~ #box_a1, .change ~ #box_a2, .change ~ #box_a3 {
   transition: 0.3s;
-  background-color: #1C1C1C;
+  /* background-color: #1C1C1C; */
 }
 
 .change ~ #box_a2{
@@ -140,7 +140,12 @@ body {
   text-align: center;
 }
 
-
+.burgered > div {
+  grid-auto-rows: auto 1fr;
+}
+.burgered #sec_b, .burgered #sec_c {
+  display: none;
+}
 
 @media screen and (max-width: 800px) {
   #sec_b {
