@@ -181,4 +181,11 @@ a {
     display: block;
     cursor: pointer;
   }
+  #box_b2 {
+    font-size: 32px!important;
+    line-height: 23px!important;
+  }
+  #box_b2 span {
+    font-size: 18px!important;
+  }
 }
