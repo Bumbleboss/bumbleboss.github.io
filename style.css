@@ -26,7 +26,9 @@ body {
 .wrapper {
   display: grid;
   grid-auto-rows: auto 1fr auto;
-  height: 100%;
+  position: absolute;
+  height: 100vh;
+  margin: -8px 0.5em 0;
 }
 
 .section {
@@ -125,9 +127,9 @@ body {
   padding-left: 10px;
 }
 
-.change ~ #box_a1, .change ~ #box_a2, .change ~ #box_a3 {
+.chnage, .change ~ #box_a1, .change ~ #box_a2 {
   transition: 0.3s;
-  /* background-color: #1C1C1C; */
+  background-color: #1C1C1C;
 }
 
 .change ~ #box_a2{
