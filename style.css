@@ -16,6 +16,7 @@
 }
 
 body {
+  margin: 0px;
   font: 23px Brother-1816-Medium;
   color: #E5E5E5;
   background-image: url(./assets/cartographer.png);
@@ -32,7 +33,8 @@ a {
   display: grid;
   grid-auto-rows: auto 1fr auto;
   height: 100vh;
-  margin: -8px 0.5em 0;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .section {
@@ -42,15 +44,21 @@ a {
 .box {
   padding: 0.5em;
   /* NOTE turn on below for debugging*/
-  /* border: 1px solid #000; */
+  /* border: 1px solid #000; */ 
 }
 
 /*logo*/
 
-
-.box ~ #box_a1 {
-  color: #A88C74;
+.animated_logo {
+  max-height: 460px;
+  max-width: 560px;
+  float:right;
 }
+
+#box_a1{
+  font-size: 23px;
+}
+
 .box ~ #box_a1 span {
   font-family: Brother-1816-Book;
   color: #E5E5E5;
@@ -60,27 +68,30 @@ a {
 
 .box ~ #box_b2 {
   white-space:nowrap;
-  text-align: center;
-  line-height: 25px;
-  font-size: 40px;
+  text-align: left;
+  line-height: 34px;
+  font-size: 52px;
   margin: auto 0 auto;
 }
 
 .box ~ #box_b2  span{
   padding-left: 60px;
-  font-size: 25px;
+  font-size: 34px;
 }
 
 /*discord_ad*/
 
 .discord_ad {
+  bottom: 20px;
+  transition: bottom 50ms ease-out;
+  position: fixed;
   cursor: pointer;
-  width: 95px;
-  height: 32px;
+  width: 115px;
 }
 
 .discord_ad:hover{
-  margin-top:2px;
+  transition: bottom 50ms ease-in;
+  bottom: 22px;
 }
 
 #sec_a {
@@ -167,12 +178,19 @@ a {
   text-align: center;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1365px) {
   #sec_b {
     grid-template-columns: 1fr;
     grid-auto-rows: auto 1fr;
   }
+  .animated_logo {
+    float: none;
+  }
+  #box_b2 {
+    text-align: center!important;
+  }
 }
+
 @media screen and (max-width: 550px) {
   #box_a2 {
     display: none;
@@ -181,11 +199,22 @@ a {
     display: block;
     cursor: pointer;
   }
+  .discord_ad {
+    width: 95px;
+    height: 32px;
+  }
+  .animated_logo {
+    max-height: 460px;
+    max-width: 560px;
+    float: none;
+  }
+  
   #box_b2 {
-    font-size: 32px!important;
-    line-height: 23px!important;
+    text-align: center!important;
+    font-size: 35px!important;
+    line-height: 19px!important;
   }
   #box_b2 span {
-    font-size: 18px!important;
+    font-size: 20px!important;
   }
 }
