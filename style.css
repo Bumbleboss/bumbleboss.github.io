@@ -174,7 +174,7 @@ a {
 }
 #box_a2 {
   font-size: 27px;
-  font-family: Brother-1816-Regular;
+  font-family: Brother-1816-Book;
 }
 
 .box ~ #box_a2 ul {
@@ -221,12 +221,22 @@ a {
   text-align: center;
 }
 
+/*-------------------------------PROJECTS---------------------------------*/
+
+/*art*/
+
+.art_svg {
+  max-height: 490px;
+  max-width: 459px;
+  float:right;
+}
+
 @media screen and (max-width: 1365px) {
   #sec_b {
     grid-template-columns: 1fr;
     grid-auto-rows: auto 1fr;
   }
-  .animated_logo {
+  .animated_logo, .art_svg {
     float: none;
   }
   #box_b2 {
@@ -249,9 +259,7 @@ a {
     width: 95px;
     height: 32px;
   }
-  .animated_logo {
-    max-height: 460px;
-    max-width: 560px;
+  .animated_logo, .art_svg {
     float: none;
   }
   #box_a1 {
