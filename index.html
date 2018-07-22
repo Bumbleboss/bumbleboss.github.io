@@ -12,18 +12,18 @@
     <!-- SECTION A -->
     <div class="section" id="sec_a">
 
-      <div class="box" id="box_a3" onclick="myFunction(this)">
+      <div class="box" id="box_a3" onclick="navTrigger(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
 
-      <div class="box" id="box_a1"><span>BUMBLE</span>BOSS</div>
+      <div class="box" id="box_a1"><a href="#"><span>BUMBLE</span>BOSS</a></div>
 
       <div class="box" id="box_a2">
         <ul>
-          <li>PROJECTS</li>
-          <li>ABOUT</li>
+          <li class="nav_btn"><a href="#">PROJECTS</a></li>
+          <li class="nav_btn"><a href="#">ABOUT</a></li>
         </ul>
       </div>
 
@@ -36,7 +36,7 @@
         <img class="animated_logo" src="./assets/animated_logo.svg">
       </div>
 
-      <div class="box" id="box_b2">HELLO THERE.<br><span>wanna see <a href="#">my projects?</a></span></div>
+      <div class="box" id="box_b2">HELLO THERE.<br><span>wanna see <a class="url" href="#">my projects?</a></span></div>
     </div>
 
     <!-- SECTION C -->
@@ -47,7 +47,7 @@
     </div>
 
     <script>
-      function myFunction(x) {
+      function navTrigger(x) {
         x.classList.toggle("change");
       }
     </script>
