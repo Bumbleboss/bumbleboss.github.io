@@ -138,6 +138,12 @@ a {
 #sec_c {
   grid-template-columns: 1fr;
 }
+#sec_d {
+  grid-template-columns: 1fr;
+  height: 95vh;
+  background-image: url(./assets/cartographer.png);
+  background-repeat: repeat;
+}
 
 #box_a3 {
   display: none;
@@ -212,7 +218,7 @@ a {
 .burgered > div {
   grid-auto-rows: auto 1fr;
 }
-.burgered #sec_b, .burgered #sec_c {
+.burgered #sec_b, .burgered #sec_c, .burgered #sec_d {
   display: none;
 }
 
@@ -226,9 +232,42 @@ a {
 /*art*/
 
 .art_svg {
-  max-height: 490px;
-  max-width: 459px;
+  max-height: 442px;
+  max-width: 414px;
   float:right;
+}
+
+/*sections*/
+.part {
+  line-height: 100px;
+  text-align: center;
+}
+.line, .line2, .line3, .line4 {
+  background-repeat: repeat-x;
+  height: 70px;
+}
+
+.line {
+  background-image: url("assets/line.svg")
+}
+
+.line2 {
+  background-image: url("assets/line2.svg")
+}
+
+.line3{
+  background-image: url("assets/line3.svg")
+}
+
+.line4 {
+  background-image: url("assets/line4.svg")
+}
+
+#part_sec {
+  grid-column: 1;
+  grid-row: auto;
+  height: 95vh;
+  background-image: url(./assets/cartographer.png);
 }
 
 @media screen and (max-width: 1365px) {
@@ -261,6 +300,9 @@ a {
   }
   .animated_logo, .art_svg {
     float: none;
+  }
+  .line, .line2, .line3, .line4 {
+    height: 38px;
   }
   #box_a1 {
     font-size: 23px;
