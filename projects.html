@@ -17,11 +17,11 @@
           <div class="bar3"></div>
         </div>
   
-        <div class="box" id="box_a1"><a href="#"><span>BUMBLE</span>BOSS</a></div>
+        <div class="box" id="box_a1"><a href="index.html"><span>BUMBLE</span>BOSS</a></div>
   
         <div class="box" id="box_a2">
           <ul>
-            <li class="nav_btn"><a href="#">PROJECTS</a></li>
+            <li class="nav_btn"><a href="projects.html">PROJECTS</a></li>
             <li class="nav_btn"><a href="#">ABOUT</a></li>
           </ul>
         </div>
@@ -35,13 +35,20 @@
           <img class="art_svg" src="assets/arts.svg">
         </div>
 
-        <div class="box" id="box_b2">STUFF I MADE!</div>
+        <div class="box" id="box_b2">STUFF I MADE!
+          <a href="#" class="scroll_down" address="true">
+            <svg class="arrow_button" viewBox="0 0 53.091 33.168">
+              <defs><style>.a {fill: #897364;}</style></defs>
+              <path class="a" d="M46.415,0,26.6,19.922,6.675,0,0,6.675,26.6,33.168,53.09,6.675Z" />
+            </svg>
+          </a>
+        </div>
       </div>
 
       <!-- SECTION D -->
       <div id="sec_d"> 
         <div class="line"></div>
-        <div class="part" id="part_sec" style="background-color: #FFFFFF;">
+        <div class="part" id="part_sec2" style="background-color: #FFFFFF;">
           <div class="content" id="content_1">LOGOS</div>
         </div>
 
@@ -51,26 +58,8 @@
         </div>
 
         <div class="line3"></div>
-        <div class="part" id="part_sec2" style="background-color: #1C1C1C;">
+        <div class="part" id="part_sec" style="background-color: #1C1C1C;">
           <div class="content" id="content_3">CODES</div>
-          
-          <!--
-          <div class="slider" data-pos="0">
-            <div class="slider__slides">
-              <img src="ishtar.gif" class="slider__slide">
-              <div class="slider__slide"></div>
-              <div class="slider__slide"></div>
-              <div class="slider__slide"></div>
-            </div>
-            <div class="slider__dots">
-              <a href="#part_sec2" class="slider__indicator"></a>
-              <a href="#part_sec2" class="slider__dot" data-pos="0"></a>
-              <a href="#part_sec2" class="slider__dot" data-pos="1"></a>
-              <a href="#part_sec2" class="slider__dot" data-pos="2"></a>
-              <a href="#part_sec2" class="slider__dot" data-pos="3"></a>
-            </div>
-          </div>-->
-
         </div>
 
         <div class="line4"></div>
@@ -85,24 +74,7 @@
         }
       </script>
     </div>
-    <!-- 
-    <script>
-      var dots = 4;
-      var sliderElem = document.querySelector('.slider');
-      var dotElems = sliderElem.querySelectorAll('.slider__dot');
-      var indicatorElem = sliderElem.querySelector('.slider__indicator');
-      Array.prototype.forEach.call(dotElems, function (dotElem) {
-        dotElem.addEventListener('click', function (e) {
-          var currentPos = parseInt(sliderElem.getAttribute('data-pos'));
-          var newPos = parseInt(dotElem.getAttribute('data-pos'));
-          var newDirection = newPos > currentPos ? 'right' : 'left';
-          var currentDirection = newPos < currentPos ? 'right' : 'left';
-          indicatorElem.classList.remove('slider__indicator--' + currentDirection);
-          indicatorElem.classList.add('slider__indicator--' + newDirection);
-          sliderElem.setAttribute('data-pos', newPos);
-        });
-      });
-    </script>-->
+
     <script type="text/javascript" language="javascript" src="./frame.js"></script>
 </body>
 </html>
