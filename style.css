@@ -95,14 +95,14 @@ a {
   float:right;
 }
 
-.box ~ #box_a1 span {
+#box_a1 span {
   font-family: Brother-1816-Book;
   color: #E5E5E5;
 }
 
 /*catchline*/
 
-.box ~ #box_b2 {
+#box_b2 {
   white-space:nowrap;
   text-align: left;
   line-height: 34px;
@@ -110,7 +110,7 @@ a {
   margin: auto 0 auto;
 }
 
-.box ~ #box_b2  span{
+#box_b2  span{
   padding-left: 60px;
   font-size: 34px;
 }
@@ -132,7 +132,7 @@ a {
 #sec_a {
   grid-template-columns: auto 1fr;
 }
-#sec_b {
+#sec_b, #sec_g {
   margin: auto 0 auto;
   text-align: center;
   grid-template-columns: 1fr 1fr;
@@ -195,19 +195,19 @@ a {
   font-family: Brother-1816-Book;
 }
 
-.box ~ #box_a2 ul {
+#box_a2 ul {
   margin: 15px 0 0 0;
   padding: 0;
   list-style: none;
   white-space: nowrap;
 }
 
-.box ~ #box_a2 ul li {
+#box_a2 ul li {
   margin-right: 53px;
   display: inline;
 }
 
-.box ~ #box_a2 ul li:first-child {
+#box_a2 ul li:first-child {
   margin-left: 10px;
 }
 
@@ -230,7 +230,7 @@ a {
 .burgered > div {
   grid-auto-rows: auto 1fr;
 }
-.burgered #sec_b, .burgered #sec_c, .burgered #sec_d, .burgered #sec_e, .burgered #sec_f {
+.burgered #sec_b, .burgered #sec_c, .burgered #sec_d, .burgered #sec_e, .burgered #sec_f, .burgered #sec_g {
   display: none;
 }
 
@@ -266,7 +266,7 @@ a {
 .content {
   font-size: 27px;
   max-height: 46px;
-  margin: auto;
+  margin: 4.5vh auto;
   border-radius: 8px;
 }
 
@@ -319,7 +319,7 @@ a {
 #part_sec {
   grid-column: 1;
   grid-row: auto;
-  height: 80vh;
+  height: 85vh;
   background-image: url(./assets/cartographer.png);
 }
 
@@ -427,17 +427,63 @@ a {
   margin-left: 4px;
 }
 
+/*-------------------------------404---------------------------------*/
+
+#box_g2 {
+  margin: auto auto auto 50px;
+}
+
+.dizzy_image {
+   max-width: 573px;
+   max-height: 471px;
+   float: right;
+}
+
+.head_text, .description_text, .button_text {
+  margin: 0;
+}
+
+.head_text {
+  font-size: 117px;
+}
+
+.description_text {
+  white-space:nowrap;
+  font-size: 37px;
+  font-family: Brother-1816-Regular;
+  color: #D6D6D6;
+}
+
+.button_text {
+  font-family: Brother-1816-Regular;
+  font-size: 37px;
+  color: #212121;
+  padding: 0 15px 3px 15px;
+  background-color: #a88e79;
+  transition: background-color 100ms ease-in;
+}
+
+.button_text:hover {
+  background-color: #897364;
+  transition: background-color 100ms ease-out;
+}
+
+
+
 /*OTHER RESOLUTIONS*/
 @media screen and (max-width: 1365px) {
-  #sec_b {
+  #sec_b, #sec_g {
     grid-template-columns: 1fr;
     grid-auto-rows: auto 1fr;
   }
-  .animated_logo, .art_svg {
+  .animated_logo, .art_svg, .dizzy_image {
     float: none;
   }
   #box_b2 {
     text-align: center!important;
+  }
+  #box_g2 {
+    margin: auto;
   }
 }
 
@@ -446,7 +492,7 @@ a {
   #sec_e {
     margin: 5vh auto 0;
   }
-  .box ~ #box_a2 ul, .box ~ #box_a2 ul li:first-child, .box ~ #box_a2 ul li {
+  #box_a2 ul, #box_a2 ul li:first-child, #box_a2 ul li {
     margin: 0;
   }
   #box_a2, .arrow_button {
@@ -459,9 +505,6 @@ a {
   .discord_ad {
     width: 95px;
     height: 32px;
-  }
-  .animated_logo, .art_svg {
-    float: none;
   }
   .line, .line2, .line3, .line4 {
     height: 38px;
@@ -476,6 +519,12 @@ a {
   }
   #box_b2 span {
     font-size: 20px!important;
+  }
+  .head_text {
+    font-size: 72px!important;
+  }
+  .description_text, .button_text {
+    font-size: 23px!important;
   }
   #content_1, #content_3 {
     float: left;
