@@ -349,11 +349,12 @@ a {
 }
 
 #box_e2 {
+  max-width: 570;
   color: #897364;
   font-family: Cabin;
   font-size: 21px;
   line-height: 33px;
-  text-align: left;
+  text-align: right;
 }
 
 #box_e2 span {
@@ -448,10 +449,10 @@ a {
 #eyeAnimationSetting {
   -webkit-animation-name:eyeAnimation;
   animation-name:eyeAnimation;
-  
+
   -webkit-transform-origin:50% 50%;
   transform-origin:50% 50%;
-  
+
   transform-box:fill-box;
 
   -webkit-transform:rotate(0deg);
@@ -489,9 +490,9 @@ a {
 .slider_content { grid-area: C; }
 .slide_image { grid-area: I; }
 .slide_content { grid-area: T; }
-.slide_textbox { 
+.slide_textbox {
   text-align: left;
-  grid-area: BO; 
+  grid-area: BO;
 }
 .social_button { grid-area: SI; }
 .slide .arrow { display: none; }
